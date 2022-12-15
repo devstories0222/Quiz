@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="questions.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="displayQuestion(totalQuestions[0])">
+    <div class="content">
+      <p class="title">Quiz</p>
+      <p class="main-info">Comment construire une garde-robe ?</p>
+
+      <div class="questions">
+        <div class="item">
+          <p class="question" id="question"></p>
+
+          <div class="choices">
+            <button
+              onclick="handleAnswer('yes')"
+            >
+              oui
+            </button>
+            <button
+              onclick="handleAnswer('no')"
+            >
+              non
+            </button>
+          </div>
+          <div class="restart">
+            <button onclick="restart()">
+                Reprendre
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

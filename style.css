@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "arial";
+}
+
+.content {
+    border: 11px solid #042042;
+    background-color: #fff;
+    padding: 20px;
+    width: 550px;
+    height: 600px;
+}
+
+p {
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.main-info {
+    text-align: center;
+    font: normal normal bold 26px/33px Euclid Circular B;
+    letter-spacing: 0;
+    color: #042042;
+    padding-left: 15px;
+}
+
+.questions {
+    padding-top: 50px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+@keyframes fadeQuestion {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.question {
+    text-align: left;
+    font: normal normal bold 25px/32px Euclid Circular B;
+    letter-spacing: 0;
+    color: #042042;
+    padding: 10px 10px 60px 10px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choices button {
+    display: inline-block;
+    border: 1px solid #042042;
+    width: 140px;
+    height: 64px;
+    margin: 0;
+    text-decoration: none;
+    background: #fff;
+    color: #042042;
+    font: normal normal bold 32px/42px Euclid Circular B;
+    cursor: pointer;
+    text-align: center;
+    transition: 250ms ease-in-out,transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.choices button:hover {
+    background: #FDDA24;
+    border: none;
+}
+
+.restart {
+    display: none;
+    justify-content: center;
+}
+
+.restart button {
+    display: inline-block;
+    padding: 8px 28px;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 26px;
+    background: #FDDA24;
+    color: #042042;
+    font: normal normal bold 1rem/30px Euclid Circular B;
+    cursor: pointer;
+    text-align: center;
+    transition: 250ms ease-in-out,transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.restart button:hover {
+    background: #042042;
+    color: #fff;
+}
